@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #333;
+            color: white;
+            
+            
+        }
+        .box1{
+            background-color: lightgreen;
+            height: 300px;
+            width: 500px;
+            line-height: 40px;
+            color: black;
+          
+        }
+        h3{
+          color: #062d0b;   
+          font-size: 30px;
+          margin: 0;
+          padding-top: 15px;
+        }
+        .btnbox{
+            display: flex;
+            justify-content: center;
+        }
+        #btn1{
+            padding: 8px;
+            
+        }
+        #btn2{
+            padding: 8px;
+            
+        }
+        .a{
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        @media(max-width: 415px){
+            body{
+              margin: 0;
+              padding: 0;
+            }
+            .box1{
+              width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS() Property in jQuery</h1>
+    <h2>CSS(Single property)</h2>
+    <div class="box1">
+        <h3>This is a heading</h3>
+        <p class="r" style="background-color:#ff0000">This is a paragraph.</p>
+        <p class="pink"  style="background-color:#e35fef">This is a paragraph.</p>
+        <p class="b" style="background-color:#0000ff">This is a paragraph.</p>
+        <div class="btnbox">
+        <button id="btn1">Set background-color of p</button>
+       </div>
+    </div>
+
+    <h2>CSS(multiple property)</h2>
+    <div class="box1">
+        <h3>This is a heading</h3>
+        <div class="a r" style="background-color:#ff0000">This is a paragraph.</div>
+        <div class="a pink" style="background-color:#e35fef">This is a paragraph.</div>
+        <div class="a b" style="background-color:#0000ff">This is a paragraph.</div>
+       
+        <div class="btnbox">
+        <button id="btn2">Set multiple styles for p</button>
+       </div>
+    </div>
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="css.js"></script>
+</body>
+</html>
